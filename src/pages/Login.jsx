@@ -3,51 +3,90 @@ import MainLayout from "../layouts/MainLayout";
 
 function Login() {
 
-  const [email, setEmail] = useState("");
+    const [email, setEmail] = useState("");
 
-  const [password, setPassword] = useState("");
+    const [password, setPassword] = useState("");
+    const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+});
 
-  const handleSubmit = (e) => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
-    e.preventDefault();
+        const newErrors = {
+            email: "",
+            password: "",
+        };
 
-    console.log("Email:", email);
-    console.log("Password:", password);
-  };
+        if (email.trim() === "") {
+            newErrors.email = "Email is required";
+        }
 
-  return (
-    <MainLayout>
+        if (password.trim() === "") {
+            newErrors.password = "Password is required";
+        }
 
-      <div className="login-container">
+        setErrors(newErrors);
 
-        <form className="login-card" onSubmit={handleSubmit}>
+        console.log(newErrors);
+    };
 
-          <h2>Login</h2>
+    return (
+        <MainLayout>
 
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+            <div className="login-container">
 
-          <input
-            type="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+                <form className="login-card" onSubmit={handleSubmit}>
 
-          <button type="submit">
-            Login
-          </button>
+                    <h2>Login</h2>
 
-        </form>
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => {
+    setEmail(e.target.value);
 
-      </div>
+    setErrors({
+        ...errors,
+        email: "",
+    });
+}}
+                    />
+                    {errors.email && (
+                        <p className="text-danger mt-1">{errors.email}</p>
+                    )}
 
-    </MainLayout>
-  );
+                    <input
+                        type="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(e) => {
+    setPassword(e.target.value);
+
+    setErrors({
+        ...errors,
+        password: "",
+    });
+}}
+                    />
+
+                    {errors.password && (
+                        <p className="text-danger mt-1">{errors.password}</p>
+                    )}
+
+
+                    <button type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+            </div>
+
+        </MainLayout>
+    );
 }
 
 export default Login;
