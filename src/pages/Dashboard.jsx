@@ -14,28 +14,14 @@ function Dashboard() {
                 </p>
 
                 <div className="stats-container">
-
-                    <StatCard
-                        title="Total Notices"
-                        value="12"
-                    />
-
-                    <StatCard
-                        title="Pending Complaints"
-                        value="5"
-                    />
-
-                    <StatCard
-                        title="Marketplace Items"
-                        value="18"
-                    />
-
-                    <StatCard
-                        title="Visitors Today"
-                        value="9"
-                    />
-
-                </div>
+    {statistics.map((stat) => (
+        <StatCard
+            key={stat.id}
+            title={stat.title}
+            value={stat.value}
+        />
+    ))}
+</div>
 
             </div>
         </MainLayout>
