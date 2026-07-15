@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 
 function Login() {
@@ -7,9 +8,9 @@ function Login() {
 
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState({
-    email: "",
-    password: "",
-});
+        email: "",
+        password: "",
+    });
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -29,7 +30,9 @@ function Login() {
 
         setErrors(newErrors);
 
-        console.log(newErrors);
+if (newErrors.email === "" && newErrors.password === "") {
+    navigate("/dashboard");
+}
     };
 
     return (
@@ -46,13 +49,13 @@ function Login() {
                         placeholder="Enter your email"
                         value={email}
                         onChange={(e) => {
-    setEmail(e.target.value);
+                            setEmail(e.target.value);
 
-    setErrors({
-        ...errors,
-        email: "",
-    });
-}}
+                            setErrors({
+                                ...errors,
+                                email: "",
+                            });
+                        }}
                     />
                     {errors.email && (
                         <p className="text-danger mt-1">{errors.email}</p>
@@ -63,13 +66,13 @@ function Login() {
                         placeholder="Enter your password"
                         value={password}
                         onChange={(e) => {
-    setPassword(e.target.value);
+                            setPassword(e.target.value);
 
-    setErrors({
-        ...errors,
-        password: "",
-    });
-}}
+                            setErrors({
+                                ...errors,
+                                password: "",
+                            });
+                        }}
                     />
 
                     {errors.password && (
