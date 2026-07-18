@@ -1,0 +1,49 @@
+.complaint-form{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    max-width:700px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.complaint-form input,
+.complaint-form select,
+.complaint-form textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+.complaint-form button{
+
+    margin-top:20px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    background:#1D546C;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}

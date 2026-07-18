@@ -1,4 +1,6 @@
+import "../assets/styles/complaints.css";
 import MainLayout from "../layouts/MainLayout";
+import ComplaintForm from "../components/ComplaintForm";
 
 function Complaints() {
     return (
@@ -8,9 +10,7 @@ function Complaints() {
 
                 <h1>Complaints</h1>
 
-                <p>
-                    Raise and track society complaints.
-                </p>
+                <ComplaintForm />
 
             </div>
 

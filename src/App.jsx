@@ -4,6 +4,7 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
+import Complaints from "./pages/Complaints";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 
       <Route path="/dashboard" element={<Dashboard />} />
 
+      <Route path="/complaints" element={<Complaints />} />
     </Routes>
 
   );
