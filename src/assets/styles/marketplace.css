@@ -1,0 +1,63 @@
+.marketplace-container{
+
+    padding:30px;
+
+}
+
+.market-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.market-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.market-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.product-image{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.market-card button{
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#1D546C;
+
+    color:white;
+
+    cursor:pointer;
+
+}

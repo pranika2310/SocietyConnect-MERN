@@ -1,0 +1,31 @@
+.notices-container {
+    padding: 30px;
+}
+
+.notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notice-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+}
+
+.notice-category {
+    display: inline-block;
+    background: #1D546C;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
