@@ -1,8 +1,25 @@
-import "../assets/styles/complaints.css";
+import { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import ComplaintForm from "../components/ComplaintForm";
+import ComplaintList from "../components/ComplaintList";
+import "../assets/styles/complaints.css";
 
 function Complaints() {
+
+    const [complaints, setComplaints] = useState([]);
+
+    const addComplaint = (complaint) => {
+        setComplaints([...complaints, complaint]);
+    };
+
+    const deleteComplaint = (id) => {
+        setComplaints(
+            complaints.filter(
+                (complaint) => complaint.id !== id
+            )
+        );
+    };
+
     return (
         <MainLayout>
 
@@ -10,7 +27,14 @@ function Complaints() {
 
                 <h1>Complaints</h1>
 
-                <ComplaintForm />
+                <ComplaintForm
+                    addComplaint={addComplaint}
+                />
+
+                <ComplaintList
+                    complaints={complaints}
+                    deleteComplaint={deleteComplaint}
+                />
 
             </div>
 
