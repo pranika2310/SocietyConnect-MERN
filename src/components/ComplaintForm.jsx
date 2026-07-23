@@ -104,7 +104,7 @@ function ComplaintForm({ addComplaint }) {
                 <p className="error">{errors.description}</p>
             )}
 
-            <button type="submit">
+            <button className="primary-btn" type="submit">
                 Submit Complaint
             </button>
 

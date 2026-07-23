@@ -38,7 +38,7 @@ function Profile() {
 
                     </div>
 
-                    <button>Edit Profile</button>
+                    <button className="primary-btn">Edit Profile</button>
 
                 </div>
 

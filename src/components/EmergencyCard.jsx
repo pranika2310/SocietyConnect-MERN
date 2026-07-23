@@ -14,7 +14,7 @@ function EmergencyCard({title,phone,emoji}){
 
             <p>{phone}</p>
 
-            <button>
+            <button className="primary-btn">
 
                 Call
 

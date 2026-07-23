@@ -11,6 +11,7 @@ import Emergency from "./pages/Emergency";
 import Profile from "./pages/Profile";
 import Visitors from "./pages/Visitors";
 import Settings from "./pages/Settings";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (

@@ -15,9 +15,9 @@ function Settings() {
 
                     <h3>Theme</h3>
 
-                    <button>Light Mode</button>
+                    <button className="primary-btn">Light Mode</button>
 
-                    <button>Dark Mode</button>
+                    <button className="primary-btn">Dark Mode</button>
 
                 </div>
 

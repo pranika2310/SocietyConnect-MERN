@@ -61,3 +61,13 @@
     cursor:pointer;
 
 }
+
+@media(max-width:768px){
+
+.marketplace-list{
+
+    grid-template-columns:1fr;
+
+}
+
+}

@@ -1,31 +1,40 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../assets/styles/navbar.css";
 
 function Navbar() {
-  return (
-    <nav className="navbar">
-      <h2 className="logo">SocietyConnect</h2>
 
-      <div className="nav-links">
+    return (
 
-        <Link to="/">Home</Link>
+        <nav className="navbar">
 
-        <Link to="/dashboard">Dashboard</Link>
+            <h2 className="logo">
+                SocietyConnect
+            </h2>
 
-        <Link to="/complaints">Complaints</Link>
+            <div className="nav-links">
 
-        <Link to="/notices">Notices</Link>
+                <NavLink to="/dashboard">Dashboard</NavLink>
 
-        <Link to="/marketplace">Marketplace</Link>
+                <NavLink to="/complaints">Complaints</NavLink>
 
-        <Link to="/visitors">Visitors</Link>
+                <NavLink to="/notices">Notices</NavLink>
 
-        <Link to="/profile">Profile</Link>
-        
-        <Link to="/settings">Settings</Link>
+                <NavLink to="/marketplace">Marketplace</NavLink>
 
-      </div>
-    </nav>
-  );
+                <NavLink to="/emergency">Emergency</NavLink>
+
+                <NavLink to="/visitors">Visitors</NavLink>
+
+                <NavLink to="/profile">Profile</NavLink>
+
+                <NavLink to="/settings">Settings</NavLink>
+
+            </div>
+
+        </nav>
+
+    );
+
 }
 
 export default Navbar;

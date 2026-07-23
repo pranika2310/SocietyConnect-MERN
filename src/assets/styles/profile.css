@@ -45,3 +45,13 @@
     border-radius:8px;
     cursor:pointer;
 }
+
+@media(max-width:768px){
+
+.profile-card{
+
+    width:95%;
+
+}
+
+}

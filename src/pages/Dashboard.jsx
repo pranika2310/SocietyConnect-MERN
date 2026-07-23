@@ -122,27 +122,29 @@ function Dashboard() {
 
             <div className="dashboard-container">
 
-                <div className="welcome-banner">
+           <div className="welcome-banner">
 
-                    <div>
+    <div>
 
-                        <h1>Welcome Back 👋</h1>
+        <h1>Welcome back, Resident 👋</h1>
 
-                        <p>
-                            Manage your society activities efficiently from one dashboard.
-                        </p>
+        <p>
+            Everything happening in your society at one glance.
+        </p>
 
-                    </div>
+    </div>
 
-                    <div className="resident-count">
+    <div className="weather-box">
 
-                        <h2>124</h2>
+        ☀️
 
-                        <span>Residents</span>
+        <h3>27°C</h3>
 
-                    </div>
+        <p>Sunny</p>
 
-                </div>
+    </div>
+
+</div>
 
                 <div className="stats-container">
                     {statistics.map((stat) => (

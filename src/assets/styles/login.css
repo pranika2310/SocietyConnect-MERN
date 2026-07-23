@@ -63,3 +63,15 @@
 
     opacity:.9;
 }
+@media(max-width:768px){
+
+.login-card,
+.signup-card{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+}

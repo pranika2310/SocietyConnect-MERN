@@ -34,3 +34,13 @@
     display:block;
     margin:12px 0;
 }
+
+@media(max-width:768px){
+
+.settings-card{
+
+    padding:18px;
+
+}
+
+}

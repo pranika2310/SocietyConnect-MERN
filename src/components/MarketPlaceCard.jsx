@@ -16,7 +16,7 @@ function MarketplaceCard({title,price,seller}){
 
             <p>Seller : {seller}</p>
 
-            <button>
+            <button className="primary-btn">
                 Contact Seller
             </button>
 

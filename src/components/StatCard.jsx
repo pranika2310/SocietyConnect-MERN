@@ -1,21 +1,25 @@
-function StatCard(props) {
+function StatCard({ title, value, icon }) {
+
     return (
+
         <div className="stat-card">
 
             <div className="stat-icon">
-                {props.icon}
+                {icon}
             </div>
 
-            <div>
+            <div className="stat-content">
 
-                <h3>{props.title}</h3>
+                <h2>{value}</h2>
 
-                <p>{props.value}</p>
+                <p>{title}</p>
 
             </div>
 
         </div>
+
     );
+
 }
 
 export default StatCard;

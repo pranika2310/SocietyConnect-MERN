@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition:.3s;
 }
 
 body {
@@ -24,4 +25,34 @@ button {
 
 img {
     max-width: 100%;
+}
+.footer{
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    background:#1D546C;
+    color:white;
+}
+.primary-btn{
+
+    background:#1D546C;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#2F7A9A;
+
 }

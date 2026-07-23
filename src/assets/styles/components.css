@@ -1,0 +1,22 @@
+.empty-state{
+
+    padding:50px;
+
+    text-align:center;
+
+    color:gray;
+
+}
+.search-bar{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    margin-bottom:20px;
+
+}
