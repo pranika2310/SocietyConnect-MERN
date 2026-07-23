@@ -86,6 +86,13 @@ function Dashboard() {
             description: "View your profile",
             link: "/profile",
             icon: <FaUsers />,
+        },
+        {
+            id: 7,
+            title: "Settings",
+            description: "Manage your preferences",
+            link: "/settings",
+            icon: <FaBell />,
         }
     ];
 

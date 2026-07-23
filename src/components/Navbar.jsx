@@ -20,6 +20,8 @@ function Navbar() {
         <Link to="/visitors">Visitors</Link>
 
         <Link to="/profile">Profile</Link>
+        
+        <Link to="/settings">Settings</Link>
 
       </div>
     </nav>
