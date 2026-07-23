@@ -73,6 +73,20 @@ function Dashboard() {
             link: "/emergency",
             icon: <FaPhoneAlt />,
         },
+        {
+            id: 5,
+            title: "Visitors",
+            description: "Manage visitor entries",
+            link: "/visitors",
+            icon: <FaUsers />,
+        },
+        {
+            id: 6,
+            title: "Profile",
+            description: "View your profile",
+            link: "/profile",
+            icon: <FaUsers />,
+        }
     ];
 
     const notices = [
@@ -80,16 +94,19 @@ function Dashboard() {
             id: 1,
             title: "Water Supply Maintenance",
             date: "20 July 2026",
+            category: "Maintenance",
         },
         {
             id: 2,
             title: "Parking Rules Updated",
             date: "25 July 2026",
+            category: "Rules",
         },
         {
             id: 3,
             title: "Independence Day Celebration",
             date: "15 August 2026",
+            category: "Event",
         },
     ];
 

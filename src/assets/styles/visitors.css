@@ -1,0 +1,26 @@
+.visitors-container{
+    padding:30px;
+}
+
+.visitor-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.visitor-card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.visitor-card:hover{
+    transform:translateY(-5px);
+}
+
+.visitor-card h3{
+    color:#1D546C;
+    margin-bottom:10px;
+}

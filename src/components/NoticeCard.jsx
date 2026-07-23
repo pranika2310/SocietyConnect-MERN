@@ -12,7 +12,7 @@ function NoticeCard({ title, date, category }) {
 
             <p>{date}</p>
 
-        </div>
+        </div> 
 
     );
 
